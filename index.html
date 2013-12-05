@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>FORMATION GRID </title>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script type='text/javascript' src='js/lapangan.js'></script>
+    <link type='text/css' rel='stylesheet' href='css/lapangan.css'></link>
+  </head>
+
+  <body>
+  <div class='wrapper'>
+    <div id='sidebar'>
+      <button onclick="toYaml()">to YAML</button>
+      <button onclick="clearActive()">clear</button>
+      <span id="coordinat">X,Y</span>
+      <ul id='list'>
+      </ul>
+    </div>
+    <div id='ground'>      
+      <div class='half_ground v'></div>
+      <div class='half_ground h'></div>
+    </div>
+  </div>
+  </body>
+</html>

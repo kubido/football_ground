@@ -1,0 +1,87 @@
+body{
+  background: url('http://farm8.staticflickr.com/7084/7394608868_d53c27bb4e.jpg');
+  font-family: verdana;
+}
+#sidebar{
+  background: white;
+  width:  200px;
+  height: 780px;  
+  float:  left;
+  border-right: 5px solid #9CD87B;
+}
+ul#list{
+  list-style: none;
+  padding-left: 0;
+}
+
+ul#list li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;  
+}
+
+ul#list li:hover{
+  color: white;
+background: #ffb76b; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffb76b 0%, #ffa73d 50%, #ff7c00 51%, #ff7f04 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffb76b), color-stop(50%,#ffa73d), color-stop(51%,#ff7c00), color-stop(100%,#ff7f04)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffb76b 0%,#ffa73d 50%,#ff7c00 51%,#ff7f04 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffb76b 0%,#ffa73d 50%,#ff7c00 51%,#ff7f04 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffb76b 0%,#ffa73d 50%,#ff7c00 51%,#ff7f04 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffb76b 0%,#ffa73d 50%,#ff7c00 51%,#ff7f04 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76b', endColorstr='#ff7f04',GradientType=0 ); /* IE6-9 */
+
+} 
+
+.wrapper{
+  width:  595px;
+  height: 780px;
+  border: 5px solid #9CD87B;
+}
+#ground{
+  width:  390px;
+  height: 780px; 
+  float:  left
+}
+.box:hover{
+  background-color: #4F7C22;
+  cursor: pointer; 
+}
+
+.box:hover div, .box.hovered div{
+  background-color: red; 
+}
+.box.active{
+  background-color: #A71B42;
+}
+.box{
+  width:  13px;
+  height: 13px;
+  float:  left;
+  border: 1px dotted #5DA379;
+  position: relative;
+}
+.box div{
+  position: absolute;
+  width: 30px;
+  height: 24px;
+  border: 1px solid #eee;
+  border-radius: 50;
+  background: green;
+  z-index: 999;
+  text-align: center;
+  top: -10px;
+  left: -10px;
+  padding-top: 6px;
+  color: white;
+}
+.half_ground{
+  height: 390px;
+  width:  390px;
+}
+.half_ground.v{
+  background-image: url('../images/bg-ground-v.png')
+}
+.half_ground.h{
+  background-image: url('../images/bg-ground-h.png')
+}
